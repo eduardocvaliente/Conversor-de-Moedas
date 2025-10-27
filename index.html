@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./styles.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Conversor de Moedas</title>
+</head>
+<body>
+    <div class="wrapper">
+        <img src ="./assets/logo.png" alt="logo-convert" class="logo-convert">
+        <main>
+            <div class="de">
+                <label for="de" class="de-nome">Converter <strong>de</strong></label><br>
+                <select id="de" name="converter-de">
+                    <option value="real">R$ Real Brasileiro</option>
+                    <option value="dolar">U$ Dólar Americano</option>
+                    <option value="euro">€ Euro</option>
+                    <option value="libra">£ Libra</option>
+                </select>
+            </div>
+            <div class="para">
+                <label for="para" class="para-nome">Converter <strong>para</strong></label><br>
+                <select id="para" name="converter-para">
+                    <option value="dolar">U$ Dólar Americano</option>
+                    <option value="euro">€ Euro</option>
+                    <option value="libra">£ Libra</option>
+    
+                </select>
+            </div>
+            <div class="valor">
+                <label for="valor" class="valor-nome">Valor</label><br>
+                <input id="valor" name="valor"><br>
+            </div>
+            <div class="converter">
+                <button type="submit" value="converter" id="button-convert">Converter</button>
+            </div>
+            <div class="resultado">
+                <div class="moeda-cima">
+                    <img src="./assets/real.png" alt="image-real" class="result-top">
+                    <p class="real-top">Real</p>
+                    <p id="real-result">0</p>
+                </div>
+                <img src="./assets/seta.png" class="seta-baixo">
+                <div class="moeda-cima">
+                    <img src="./assets/dolar.png" alt="image-moeda" id="imagem-moeda">
+                    <p id="moeda-descricao">Dolar</p>
+                    <p id="result-bottom">0</p>
+                </div>
+            </div>
+        </main>
+    </div>
+    
+</body>
+<script src="./script.js"></script>
+</html>
